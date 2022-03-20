@@ -1,0 +1,40 @@
+h1 {
+    font-family: 'Bellefair', serif;
+    font-size: 150px;
+    color: var(--color-white);
+}
+
+h2 {
+    font-family: 'Bellefair', serif;
+    font-size: 100px;
+}
+
+h3 {
+    font-family: 'Bellefair', serif;
+    font-size: 56px;
+}
+
+h4 {
+    font-family: 'Bellefair', serif;
+    font-size: 32px;
+}
+
+h5 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+    letter-spacing: 4.5px;
+    color: var(--color-blue);
+}
+
+p {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 18.5px;
+    letter-spacing: 0.6px;
+    color: var(--color-blue);
+    text-align: justify;
+}
+
+a {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+}
