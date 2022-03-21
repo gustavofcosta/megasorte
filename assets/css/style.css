@@ -10,9 +10,6 @@
     box-sizing: border-box;
 }
 
-::-webkit-scrollbar {
-    width: 0px;
-}
 
 html {
     font-size: 62.5%;
@@ -20,14 +17,55 @@ html {
     background: #FEFEFE;
 }
 
+body::-webkit-scrollbar {
+    width: 8px;
+    /* width of the entire scrollbar */
+}
+
+.resu::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: var(--color-blue);
+    /* color of the scroll thumb */
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #232736;
+    /* color of the tracking area */
+    border-radius: 2px;
+    /* roundness of the scroll thumb */
+}
+
+.resu::-webkit-scrollbar-track {
+    background-color: var(--color-blue);
+    /* color of the scroll thumb */
+}
+
+
+.resu::-webkit-scrollbar-thumb {
+    background: #232736;
+    /* color of the tracking area */
+    border-radius: 2px;
+    /* roundness of the scroll thumb */
+}
+
+
 nav {
     position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     padding: 3px;
     background-image: linear-gradient(to right, #171921, #232736);
+}
+
+body {
+    width: 100%;
+    height: 1000px;
+    position: absolute;
 }
 
 .logo {
@@ -70,7 +108,7 @@ nav {
     justify-content: center;
 }
 
-main h3 {
+main h1 {
     text-align: center;
     padding: 100px 0 30px 0px;
     background-image: linear-gradient(to right, #171921, #232736);
@@ -78,13 +116,13 @@ main h3 {
 }
 
 form {
-    font-size: 26px;
+    font-size: 18px;
     font-family: 'Bellefair', serif;
     padding: 0 120px 0 120px;
-    max-width: 1250px;
+    max-width: 900px;
     min-height: 150px;
-    box-shadow: 2px 2px 3px 3px rgba(32, 32, 32, 0.712);
-    border-radius: 18px;
+    box-shadow: 2px 2px 2px 2px rgba(32, 32, 32, 0.408);
+    border-radius: 10px;
     background: white;
     margin-bottom: 25px;
     margin-top: 25px;
@@ -98,14 +136,13 @@ form input {
     border-radius: 5px;
 }
 
-form h5 {
-    font-size: 35px;
+form h2 {
     margin-bottom: 25px;
     color: var(--color-dark-blue);
 }
 
 form button {
-    font-size: 20px;
+    font-size: 18px;
     border-radius: 10px;
     margin-top: 25px;
     padding: 10px;
@@ -120,10 +157,11 @@ form button:hover {
 }
 
 footer {
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--color-dark-blue);
+    background-image: linear-gradient(to right, #171921, #232736);
     height: 42px;
     width: 100%;
     bottom: 0;
@@ -131,11 +169,12 @@ footer {
 
 footer p {
     text-align: center;
+    font-size: 18px;
 }
 
 .line {
     height: 1px;
-    background: var(--color-dark-blue);
+    background: rgba(59, 58, 58, 0.36);
     margin-top: 30px;
 }
 
@@ -143,8 +182,15 @@ footer p {
     margin-top: 25px;
 }
 
-.resu {
-    font-size: 26px;
+/* .resu {
+    font-size: 22px;
     font-family: 'Bellefair', serif;
     padding-bottom: 25px;
-}
+    overflow-y: scroll;
+    height: 250px;
+    max-width: 1250px;
+    margin-bottom: 50px;
+    padding: 15px;
+    box-shadow: 2px 2px 2px 2px rgba(32, 32, 32, 0.408);
+    border-radius: 4px;
+} */

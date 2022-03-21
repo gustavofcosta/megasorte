@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Site de simulador de jogos para loterica">
+    <meta name="keywords"
+        content="Loterica, mega sena, lotofácil, quina, lotomania, timemania, dupla sena, federal, loteca, dia da sorte, super sete">
+    <meta name="author" content="Gustavo Fernandes Costa">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/images/trevo.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +25,9 @@
 <body>
     <nav>
         <div class="logo">
-            <li><a href="#"><img src="assets/images/trevo.png" alt="trevo da sorte"></a></li>
+            <ul>
+                <li><a href="#"><img src="assets/images/trevo.png" alt="trevo da sorte"></a></li>
+            </ul>
         </div>
         <div class="links">
             <ul class="menu">
@@ -40,27 +46,23 @@
     </nav>
 
     <main>
-        <h3>Gerador de jogos </h3>
+        <h1>Gerador de jogos </h1>
         <div class="tabela">
             <form>
-                <h5>Crie seu proprio jogo</h5>
-                <label class="qnsorteio">Informe a quantidade de números do sorteio: </label>
-                <input type="number"><br>
-                <label class="qnseremsorteados">Informe a quantidade de números a serem sorteados: </label>
-                <input type="number"><br>
-                <label class="qjogos">Informe a quantidade de Jogos: </label>
-                <input type="number"><br>
-                <button>Gerar jogos</button>
+                <h2>Crie seu proprio jogo</h2>
+                <label for="qnsorteio">Informe a quantidade de números do sorteio: </label>
+                <input class="qnsorteio" type="number" min="0"><br>
+                <label for="qnseremsorteados">Informe a quantidade de números a serem sorteados: </label>
+                <input class="qnseremsorteados" type="number" min="0"><br>
+                <label for="qjogos">Informe a quantidade de Jogos: </label>
+                <input class="qjogos" type="number" min="0"><br>
+                <button type="button" class="btn-gerar">Gerar jogos</button>
                 <div class="line">
                 </div>
                 <div class="jogos">
-                    <h5>Resultados:</h5>
+                    <h2>Jogos gerados:</h2>
                 </div>
-                <div class="resu">
-                    sdsdsdsd
-                    sdsdsdsdsdsd
-                    sdsd
-                </div>
+                <ol start="1" class="resu"></ol>
             </form>
         </div>
     </main>
@@ -69,7 +71,7 @@
         <p>© Copyright MegaSorte © 2022. Todos os direitos reservados.</p>
     </footer>
 
-    <script src="simulador.js"></script>
+    <script src="assets/scripts/simulador.js"></script>
 
 </body>
 
