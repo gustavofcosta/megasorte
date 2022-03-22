@@ -1,5 +1,4 @@
 h1 {
-    font-family: 'Bellefair', serif;
     font-size: 44px;
 }
 
@@ -14,7 +13,7 @@ p {
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 18px;
     letter-spacing: 0.6px;
-    color: var(--color-blue);
+    color: var(--color-dark-blue);
     text-align: justify;
 }
 

@@ -1,17 +1,14 @@
-const qtdSorteio = document.querySelector('.qnsorteio');
 const qtdAsersorteados = document.querySelector('.qnseremsorteados');
 const qtdJogos = document.querySelector('.qjogos');
 const btnGerar = document.querySelector('.btn-gerar');
 const resultado = document.querySelector('.resu');
 
 
+
 function criaLi() {
     const li = document.createElement('li');
-    li.setAttribute("id", "texto")
     return li;
 }
-
-
 
 function randomNumber(min, max) {
     min = Math.ceil(min);
@@ -25,8 +22,7 @@ function sorteia() {
 
 }
 
-function geraJogos(qtdS, qtdA, qtdJ) {
-    const nFinal = Number(qtdS);
+function geraJogos(qtdA, qtdJ) {
     const totalN = Number(qtdA);
     const totalC = Number(qtdJ);
 
@@ -37,7 +33,7 @@ function geraJogos(qtdS, qtdA, qtdJ) {
     resultado.innerHTML = ''
     for (var x = 0; x < totalC; x++) {
         while (sorteados.length < totalN) {
-            const aleatorio = randomNumber(01, nFinal)
+            const aleatorio = randomNumber(01, 25)
             if (sorteados.length === 0) {
                 sorteados.push(aleatorio)
             } else if (sorteados.indexOf(aleatorio) > -1) {
@@ -57,15 +53,12 @@ function geraJogos(qtdS, qtdA, qtdJ) {
         resultado.appendChild(li);
     })
 
-
 }
 
-
 btnGerar.addEventListener('click', function () {
-    if (!qtdSorteio.value) return;
     if (!qtdAsersorteados.value) return;
     if (!qtdJogos.value) return;
-    geraJogos(qtdSorteio.value, qtdAsersorteados.value, qtdJogos.value);
+    geraJogos(qtdAsersorteados.value, qtdJogos.value);
     document.getElementById("displayResultados").style.display = "block"
 });
 

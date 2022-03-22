@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Site de simulador de jogos para loterica">
+    <meta name="keywords"
+        content="Loterica, mega sena, lotofácil, quina, lotomania, timemania, dupla sena, federal, loteca, dia da sorte, super sete">
+    <meta name="author" content="Gustavo Fernandes Costa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/images/trevo.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/desktop.css">
+    <link rel="stylesheet" href="/assets/css/tablet.css">
+    <link rel="stylesheet" href="/assets/css/mobile.css">
+    <link rel="stylesheet" href="/assets/css/elementos.css">
+    <title>Lotomania</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <ul>
+                <li><a href="/index.html"><img src="/assets/images/trevo.png" alt="trevo da sorte"></a></li>
+            </ul>
+        </div>
+        <div class="links">
+            <ul class="menu">
+                <li><a href="/index.html">Sorteios</a></li>
+                <li><a href="/paginas/megasena.html">Mega-sena</a></li>
+                <li><a href="/paginas/lotofacil.html">Lotofácil</a></li>
+                <li><a href="/paginas/quina.html">Quina</a></li>
+                <li><a href="/paginas/lotomania.html">Lotomania</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="title">
+            <div class="imgloterica ">
+                <img src="/assets/images/lotomania.png" alt="lotomania">
+                <a href="https://loterias.caixa.gov.br/Paginas/Lotomania.aspx" target="_blank">click aqui pra ver ultimo
+                    resultado</a>
+            </div>
+        </div>
+        <div class="tabela">
+            <form>
+                <h2>Crie seus jogos</h2>
+                <label for="number">Informe a quantidade de Jogos: </label>
+                <input class="qjogos" type="number" id="quantidadeJogos" min="0" aria-label="numeros"><br>
+                <button type="button" class="btn-gerar">Gerar jogos</button>
+                <div class="line">
+                </div>
+                <div id="displayResultados">
+                    <div class="jogos">
+                        <h2>Jogos gerados:</h2>
+                        <button onclick="copiarTexto()">Copiar</button>
+                    </div>
+                    <div class="grid">
+                        <ol start="1" class="resu"></ol>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="session">
+            <div class="content">
+                <h1>Como jogar</h1>
+                <p>A Lotomania é fácil de jogar e de ganhar: basta escolher 50 números entre 100 e então concorrer a
+                    prêmios para
+                    acertos de 20, 19, 18, 17, 16, 15 ou nenhum número.
+                    Além da opção de marcar no volante, você ainda pode marcar menos que 50 números e deixar que o
+                    sistema complete o jogo para você; não marcar nada e deixar que o sistema escolha todos os números
+                    na Surpresinha e/ou concorrer com a mesma aposta por 2, 4 ou 8 concursos consecutivos com a
+                    Teimosinha. Outra opção é efetuar uma nova aposta com o sistema selecionando os outros 50 números
+                    não registrados no jogo original, através da Aposta-Espelho.
+                </p>
+                <h1>Sorteios</h1>
+                <p>Os sorteios são realizados às segundas-feiras, às quartas-feiras e às sextas-feiras, às 20h.</p>
+
+                <h1>Apostas</h1>
+                <p>O preço da aposta é único e custa apenas R$ 2,50.</p>
+
+                <h1>Premiação</h1>
+                <p>O prêmio bruto corresponde a 43,35% da arrecadação. Dessa porcentagem são distribuídos:
+                    - 45% entre os acertadores dos 20 números sorteados - 1ª faixa;
+                    - 16% entre os acertadores de 19 dos 20 números sorteados - 2ª faixa;
+                    - 10% entre os acertadores de 18 dos 20 números sorteados - 3ª faixa;
+                    - 7% entre os acertadores de 17 dos 20 números sorteados - 4ª faixa;
+                    - 7% entre os acertadores de 16 dos 20 números sorteados - 5ª faixa;
+                    - 7% entre os acertadores de 15 dos 20 números sorteados - 6ª faixa;
+                    - 8% entre os acertadores de nenhum dos 20 números sorteados - 7ª faixa;
+                </p>
+
+                <h1>Acumulação</h1>
+                <p>Não existindo aposta premiada na 7ª faixa (0 acerto), o prêmio acumula para o concurso subsequente,
+                    na 1ª faixa de premiação (20 acertos). Nas demais faixas, o prêmio acumula na respectiva faixa de
+                    premiação.
+                </p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© Copyright MegaSorte © 2022. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="/assets/scripts/lotomania.js"></script>
+
+</body>
+
+</html>

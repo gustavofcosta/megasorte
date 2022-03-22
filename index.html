@@ -9,69 +9,72 @@
         content="Loterica, mega sena, lotofácil, quina, lotomania, timemania, dupla sena, federal, loteca, dia da sorte, super sete">
     <meta name="author" content="Gustavo Fernandes Costa">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/images/trevo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/images/trevo.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="assets\css\style.css">
-    <link rel="stylesheet" href="assets/css/desktop.css">
-    <link rel="stylesheet" href="assets/css/tablet.css">
-    <link rel="stylesheet" href="assets/css/mobile.css">
-    <link rel="stylesheet" href="assets/css/elementos.css">
-    <title>Mega Sorte</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/desktop.css">
+    <link rel="stylesheet" href="/assets/css/tablet.css">
+    <link rel="stylesheet" href="/assets/css/mobile.css">
+    <link rel="stylesheet" href="/assets/css/elementos.css">
+    <title>Gere Sorte</title>
 </head>
 
 <body>
     <nav>
         <div class="logo">
             <ul>
-                <li><a href="#"><img src="assets/images/trevo.png" alt="trevo da sorte"></a></li>
+                <li><a href="/index.html"><img src="/assets/images/trevo.png" alt="trevo da sorte"></a></li>
             </ul>
         </div>
-        <div class="links">
+        <div class="links" id="myLinks">
             <ul class="menu">
-                <li><a href="#">Mega-sena</a></li>
-                <li><a href="#">Lotofácil</a></li>
-                <li><a href="#">Quina</a></li>
-                <li><a href="#">Lotomania</a></li>
-                <li><a href="#">Timemania</a></li>
-                <li><a href="#">Dupla sena</a></li>
-                <li><a href="#">Federal</a></li>
-                <li><a href="#">Loteca</a></li>
-                <li><a href="#">Dia da Sorte</a></li>
-                <li><a href="#">Super sete</a></li>
+                <li><a href="/index.html">Sorteios</a></li>
+                <li><a href="/paginas/megasena.html">Mega-sena</a></li>
+                <li><a href="/paginas/lotofacil.html">Lotofácil</a></li>
+                <li><a href="/paginas/quina.html">Quina</a></li>
+                <li><a href="/paginas/lotomania.html">Lotomania</a></li>
             </ul>
         </div>
     </nav>
 
     <main>
-        <h1>Gerador de jogos </h1>
+        <div class="title">
+            <h1>Gerador de jogos e sorteios </h1>
+        </div>
         <div class="tabela">
             <form>
-                <h2>Crie seu proprio jogo</h2>
-                <label for="qnsorteio">Informe a quantidade de números do sorteio: </label>
-                <input class="qnsorteio" type="number" min="0"><br>
-                <label for="qnseremsorteados">Informe a quantidade de números a serem sorteados: </label>
-                <input class="qnseremsorteados" type="number" min="0"><br>
-                <label for="qjogos">Informe a quantidade de Jogos: </label>
-                <input class="qjogos" type="number" min="0"><br>
+                <h2>Configure seus números</h2>
+                <label for="number">Informe a quantidade de números do sorteio: </label>
+                <input class="qnsorteio" type="number" id="numeroFinal" min="0" aria-label="numeros"><br>
+                <label for="number">Informe a quantidade de números a serem sorteados: </label>
+                <input class="qnseremsorteados" type="number" id="quantidadeNumeros" min="0" aria-label="numeros"><br>
+                <label for="number">Informe a quantidade de Jogos: </label>
+                <input class="qjogos" type="number" id="quantidadeJogos" min="0" aria-label="numeros"><br>
                 <button type="button" class="btn-gerar">Gerar jogos</button>
                 <div class="line">
                 </div>
-                <div class="jogos">
-                    <h2>Jogos gerados:</h2>
+                <div id="displayResultados">
+                    <div class="jogos">
+                        <h2>Jogos gerados:</h2>
+                        <button type="button" class="copy">Copiar</button>
+                    </div>
+                    <div class="grid">
+                        <ol start="1" class="resu"></ol>
+                    </div>
                 </div>
-                <ol start="1" class="resu"></ol>
             </form>
         </div>
+        <div class="space"></div>
     </main>
 
     <footer>
         <p>© Copyright MegaSorte © 2022. Todos os direitos reservados.</p>
     </footer>
 
-    <script src="assets/scripts/simulador.js"></script>
+    <script src="/assets/scripts/simulador.js"></script>
 
 </body>
 

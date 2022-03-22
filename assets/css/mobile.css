@@ -1,7 +1,28 @@
-@media only screen and (max-width : 450px) {
-    body {
-        background-color: black;
+@media only screen and (max-width : 800px) {
+    .links {
+        display: none;
+    }
 
+    form {
+        max-width: 300px;
+        padding: 0 10px 0 10px;
+        font-size: 15px;
+    }
+
+    .content {
+        max-width: 300px;
+    }
+
+    .content h1 {
+        font-size: 28px;
+    }
+
+    .content p {
+        font-size: 13px;
+    }
+
+    footer p {
+        font-size: 13px;
     }
 
 }
